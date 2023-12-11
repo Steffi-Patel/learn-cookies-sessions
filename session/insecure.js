@@ -38,6 +38,7 @@ app.post("/register", (req, res) => {
 })
 
 app.post("/forget", (req, res) => {
+  
   req.session.destroy(err => {
     res.redirect("/")
   })
